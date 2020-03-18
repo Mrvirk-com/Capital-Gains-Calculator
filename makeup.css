@@ -58,6 +58,11 @@ div.boxes {
   font-size: 25px;
 }
 
+.secondary_result{
+  color: purple;
+  font-weight: bold;
+  font-size: 25px;
+}
 .result-negative {
   color: red;
   font-weight: bold;
@@ -114,10 +119,26 @@ p.hint {
   margin-top: 7px;
 }
 
+.calculator_box {
+  float: left;
+  width: 60%;
+  margin-top: 0px;
+}
+
+.results_box {
+  float: left;
+  width: 40%;
+  margin-top: 0px;
+}
+
 @media only screen and (max-width:620px) {
 
   /* For mobile phones: */
   .menu, .main, .right {
+    width: 100%;
+  }
+
+  .calculator_box, .results_box {
     width: 100%;
   }
 
