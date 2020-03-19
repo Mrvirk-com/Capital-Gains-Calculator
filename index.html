@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="theme-color" content="#009900"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mr. Profit Loss is calculator that helps calculate Calculate Profits on Investments, Stocks or Products with Ease" />
+  <meta name="description" content="Mr. Profit Loss is calculator that helps calculate profit, tax, loss on Investments, Stocks, Products, eCommerce or Trading with Ease" />
   <meta name="keywords" content="Mr. Profit Loss, profits, profit, gains, stocks profit calculator, investment gains, product profit calculator, margin calculator, trading calculator, profit and loss calculator, profit calculator, profit and loss percentage calculator">
   <link rel="icon" href="https://profitloss.mrvirk.com/icon.png" />
   <link href="makeup.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
       <div style="overflow:auto">
       <div class="calculator_box">
         <div class="boxes">Calculator</div>
-      <div class="boxes">
+      <div class="secondary_boxes">
 
         <form id="profit_loss_input_form">
           <p>Purchase Price
@@ -47,13 +47,14 @@
             <input type="number" name="sell_price" value="112">
              Quantity
             <input type="number" name="quantity" value="1">
-        
+            Tax % (Captial Gains or VAT)
+           <input type="number" name="tax_percent" value="0">
           </p>
           </div>
         </div>
         <div class="results_box">
         <div class="boxes">Results</div>
-            <div class="boxes">
+            <div class="secondary_boxes">
               <p>
             <span class="results_element"> Total Cost </span>
             <input type="number" name="total_cost" value="0" class="secondary_result">
@@ -61,10 +62,12 @@
             <input type="number" name="total_value_upon_selling" value="0" class="secondary_result">
             <span class="results_element"> Total Gain </span>
             <input type="text" name="total_margin" value="" class="result">
-            <br><span class="results_element">Profit %</span>
+            <br><span class="results_element">Profit</span>
             <input type="text" name="margin_percent" value="" class="result">
             <span class="results_element"> Gain per Item </span>
             <input type="text" name="margin" value="" class="result">
+            <span class="results_element"> Tax Payable </span>
+            <input type="text" name="tax_payable" value="No Tax" class="secondary_result">
           </p>
         </form>
       </div>
