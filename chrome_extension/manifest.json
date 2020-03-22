@@ -1,0 +1,20 @@
+{
+  "name": "Mr. Profit - Profit Calculator",
+  "version": "1.0",
+  "description": "Calculate Profit/Gains on your Investments, Stocks, Products, eCommerce or Trading with Ease",
+  "permissions": ["activeTab","declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+    "page_action": {
+      "default_popup": "calculator.html",
+      "default_icon": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      }
+    },
+  "manifest_version": 2
+}
