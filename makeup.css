@@ -85,13 +85,13 @@ p.hint {
   box-sizing: border-box;
 }
 
-.menu {
+.left {
   float: left;
   width: 20%;
   text-align: center;
 }
 
-.menu a {
+.left a {
   padding: 8px;
   margin-top: 7px;
   display: block;
@@ -139,7 +139,7 @@ div.secondary_boxes {
 @media only screen and (max-width:620px) {
 
   /* For mobile phones: */
-  .menu, .main, .right {
+  .left, .main, .right {
     width: 100%;
 
   }
@@ -162,7 +162,7 @@ div.secondary_boxes {
     height: 2%;
   }
 
-  .menu a {
+  .left a {
     padding: 4px;
     margin-top: 3.5px;
     display: inline;
