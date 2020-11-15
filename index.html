@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Profit Calculator | Capital Gains | Calculate Profits on Investments, Stocks, Products</title>
+  <title>Capital Gains Calculator</title>
   <meta charset="UTF-8">
   <meta name="theme-color" content="#009900"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Navjot Virk">
-  <meta name="description" content="Gross Profit and Profit Percentage Calculator for Investments, Stocks, Products, eCommerce and Trading. Helps you save time and is easy to use" />
-  <meta name="keywords" content="Profit calculator, Gains Calculator, Capital gains calculator, tax calculator, Mr. Profit Loss, profits, profit, gains, stocks profit calculator, investment gains, product profit calculator, margin calculator, trading calculator, profit and loss calculator, profit and loss percentage calculator">
+  <meta name="description" content="Capital Gains Calculator" />
+  <meta name="keywords" content="Capital Gains Calculator">
   <link rel="icon" type="image/png" href="https://mrvirk.com/wp-content/uploads/2018/05/cropped-mrvirk-mobile-logo-v3-32x32.png">
   <link href="makeup.css" rel="stylesheet" type="text/css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,18 +28,16 @@
   <div style="overflow:auto">
     <div class="left">
       <a href="index.html">Home</a>
-      <a href="https://mrvirk.com/dividend-calculator/?utm_source=profit_calculator&utm_medium=menu">Dividend Calculator</a>
-      <a href="https://mrvirk.com/percentage-calculator/?utm_source=profit_calculator&utm_medium=menu">Percentage Calculator</a>
-      <a href="https://mrvirk.com/vat-calculator/?utm_source=profit_calculator&utm_medium=menu">VAT Calculator</a>
-      <a href="https://mrvirk.com/discount-calculator/?utm_source=profit_calculator&utm_medium=menu">Discount Calculator</a>
-      <a href="https://mrvirk.com/percent-off-calculator/?utm_source=profit_calculator&utm_medium=menu">Percent Off Calculator</a>
-      <a href="https://mrvirk.com/exponents-calculator/?utm_source=profit_calculator&utm_medium=menu">Exponents Calculator</a>
-      <a href="https://mrvirk.com/sp500/?utm_source=profit_calculator&utm_medium=menu">S&P 500 Directory</a>
+      <a href="https://mrvirk.com/percentage-calculator/">Percentage Calculator</a>
+      <a href="https://mrvirk.com/vat-calculator/">VAT Calculator</a>
+      <a href="https://mrvirk.com/dividend-calculator/">Dividend Calculator</a>
+      <a href="https://mrvirk.com/percent-off-calculator/">Percent Off Calculator</a>
+      <a href="https://mrvirk.com/sp500">S&P 500 Directory</a>
     </div>
 
     <div class="main">
-      <h1>Profit Calculator | <span>Mr. Profit</span> </h1>
-      <p>Gross Profit and Profit Percentage Calculator for Investments, Stocks, Products, eCommerce and Trading. Helps you save time and is easy to use.</p>
+      <h1>Capital Gains <span>Calculator</span></h1>
+
       <div style="overflow:auto">
       <div class="calculator_box">
         <div class="boxes">Calculator</div>
@@ -48,12 +45,16 @@
 
         <form id="profit_loss_input_form">
           <p>Purchase Price
-            <input type="number" name="purchase_price" value="100"> Sell Price
-            <input type="number" name="sell_price" value="112">
+            <input type="number" name="purchase_price" value="52"> Sell Price
+            <input type="number" name="sell_price" value="75">
              Quantity
             <input type="number" name="quantity" value="1">
             Tax % (Captial Gains or VAT)
            <input type="number" name="tax_percent" value="0">
+           Dividend per Share
+           <input type="number" name="dividend_per_share" value="2.81">
+           Total Return
+           <input type="text" name="total_return" class="result">
           </p>
           </div>
         </div>
@@ -73,6 +74,14 @@
             <input type="text" name="margin" value="" class="result">
             <span class="results_element"> Tax Payable </span>
             <input type="text" name="tax_payable" value="No Tax" class="secondary_result">
+            Yield
+            <input type="text" name="dividend_yield" class="result"
+            Yearly Dividend
+            <input type="text" name="yearly_dividend" class="result">
+            Quarterly Dividend
+            <input type="text" name="quarterly_dividend" class="result">
+            Monthly Dividend
+            <input type="text" name="monthly_dividend" class="result">
           </p>
         </form>
       </div>
@@ -89,39 +98,7 @@
       </script>
     </div>
 
-      <div class="boxes">
-        <p>Using this calculator you can calculate your gross profit, as well as profit percentage along with considering factors like capital gains tax for your investments, stocks, trades, product, commerce and overall finance.
-        </p>
-          <p>
-           Let's quickly cover some of the core basics of calculating gross profits or in other words gains. Then we will cover the formula/method for calculating profit percentage.
-          </p>
-        </p>
-        <h2>What is Gross Profit ? Formula & Explanation with Examples</h2>
-        <p><b>Gross Profit</b> is the money you or your company has left after substracting cost of goods / investment from revenue (or sale amount).</p>
-        <p><b>Example 1</b> : You bought a company stock at the price of 100$, and buying a total of 100 shares.</p>
-        <p>So, the cost is = 100 x 100 = 10000$ (Cost).</p>
-        <p>And after 2 years say you decided to sell your position in the company and the current share price is 130$ per share.</p>
-        <p>So, the amount you will recieve from sale of 100 share is = 100 x 130 = 13000$ (Recievables from Sale)</p>
 
-        <p><b>Formula </b>: Gross Profit = Total Recievables from Sale - Total Cost</p>
-        <p>So, Gross Profit = 13000 - 10000 = 3000$ </p>
-
-
-
-        <p><b>Example 2</b> : You have an eCommerce store selling t-shirts, with a .. </p>
-
-
-
-
-
-
-
-        <p><b>Useful Links</b></p>
-        <a href="https://mrvirk.com/percentage-calculator/?utm_source=profit_calculator&utm_medium=link">Basic Percentage Calculator</a>
-        <br><br>
-        <a href="https://mrvirk.com/percentage-calculator/help.html?utm_source=profit_calculator&utm_medium=menu">Learn - How to Calculate Percentage Using the Formula ?</a>
-
-      </div>
 
       <script src="pl-logic.js"></script>
       <div style="padding:15px;text-align:center;">
