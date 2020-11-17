@@ -5,7 +5,7 @@ body {
 }
 
 span {
-  color: #009900;
+  color: purple;
 }
 
 input {
@@ -44,7 +44,7 @@ div {
   font-size: 18px;
 }
 
-a {color: #009900;
+a {color: purple;
 font-weight: bold;}
 
 div.boxes {
